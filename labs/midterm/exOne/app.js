@@ -1,3 +1,7 @@
+//Zaydee Dominguez-Chang
+//N220 Midterm Review Exercise One
+// Due 10/13/2022
+
 const addRemove=(id)=>{
 
     const clickedItem=document.getElementById("clickedItem");

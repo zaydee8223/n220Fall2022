@@ -1,3 +1,7 @@
+  //Zaydee Dominguez-Chang
+//N220 Midterm Review Exercise Two
+// Due 10/13/2022
+  
   // Global variables
   var playerScore = 0;
   var computerScore = 0;
