@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Exercise Two: Rock Paper Scissors (Guard)</title>
+
+    <!-- styling for the entire game -->
+    <style>
+      /* Styling the game */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      /* create container using flex */
+      .box {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Score Board */
+      .score {
+        display: flex;
+        width: 30vw;
+        justify-content: space-around;
+        margin: 5% 0;
+      }
+
+      /* Score  */
+      .p-count,
+      .c-count {
+        width: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 15px;
+      }
+
+      /* displaying buttons in one line */
+      .options {
+        display: flex;
+        width: 50vw;
+        justify-content: space-around;
+        margin-top: 2rem;
+      }
+
+      /* Styling on all buttons */
+      .btns {
+        padding: 0.8rem;
+        width: 100px;
+        border-radius: 10px;
+        background: blue;
+        outline: none;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+      .btns:hover {
+        background: blue;
+      }
+      .move {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .result {
+        margin-top: 20px;
+        font-size: 1.2rem;
+      }
+      .playerScore,
+      .computerScore {
+        display: grid;
+        place-items: center;
+      }
+      #reload {
+        margin-top: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors (Guard)</h1>
+    <section class="box">
+      <div class="score">
+        <div class="playerScore">
+          <h2>Player</h2>
+          <p class="p-count count">0</p>
+        </div>
+        <div class="computerScore">
+          <h2>Computer</h2>
+          <p class="c-count count">0</p>
+        </div>
+      </div>
+
+      <b class="move">Choose your move</b>
+      <span id="movesleft">Moves Left: 10 </span>
+
+      <div class="options">
+        <div class="btns rock">Rock</div>
+        <div class="btns paper">Paper</div>
+        <div class="btns scissor">Scissors</div>
+        <div class="btns guard">Guard</div>
+      </div>
+
+      <!--Final result of game -->
+      <div class="result"></div>
+
+      <!--Reload the game -->
+      <button class="btns" id="reload"></button>
+    </section>
+    <!-- linking js  -->
+    <script src="app.js"></script>
+  </body>
+</html>

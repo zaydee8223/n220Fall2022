@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise One: UI Navigation Highlighter</title>
+
+    <style>
+    .card{/*style for every card*/
+        
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        margin: 20px;
+        cursor: pointer;
+        
+        }
+        
+        .click{/*styles for the clicked element*/
+        
+        background-color: lightcoral;
+        
+        font-weight: bold;
+        
+        }
+        
+        #clickedItem{
+        
+        font-size: 25px;
+        
+        font-weight: bold;
+        
+        display: flex;
+        
+        justify-content: center;
+        
+        width: 100vw;
+        
+        }
+        
+        </style>
+  </head>
+  <body>
+    <h1>UI Navigation Highlighter</h1>
+    <div id="clickedItem">
+
+    </div>
+    
+    <!-- six div tags with a word inside it -->
+    
+    <div class="main-div">
+    
+    <div class="card" id="1" onclick="addRemove(1)" >
+    
+    Click me
+    
+    </div>
+    
+    <div class="card" id="2" onclick="addRemove(2)">
+    
+    You can click
+    
+    </div>
+    
+    <div class="card" id="3" onclick="addRemove(3)">
+    
+    Clicking is Fun
+    
+    </div>
+    
+    <div class="card" id="4" onclick="addRemove(4)">
+    
+    Click me x4
+    
+    </div>
+    
+    <div class="card" id="5" onclick="addRemove(5)">
+    
+    I change when clicked
+    
+    </div>
+    
+    <div class="card" id="6" onclick="addRemove(6)">
+    
+    Last click
+    
+    </div>
+    
+    </div>
+   
+    <!-- linking js -->
+    <script src="app.js"></script>
+  </body>
+</html>
+
+  </body>
+</html>
