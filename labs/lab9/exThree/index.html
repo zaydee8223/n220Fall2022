@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Three: Show Info</title>
+
+    <style>
+      button {
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+
+      #stringResult {
+        font-weight: bold;
+        margin-left: 100px;
+        margin-top: 20px;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Show Info</h1>
+
+    <!-- button for index one -->
+    <button id="one" onclick="orderString()">Click Home</button>
+
+    <!-- button for index two -->
+    <button id="two" onclick="orderString()">Click About</button>
+
+    <!-- button for index three -->
+    <button id="three" onclick="orderString()">Click Contact</button>
+
+    <!-- this is where the string result will go -->
+    <div id="stringResult"></div>
+
+    <!-- linking js to page -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise One: Is Divisible By Seven</title>
+
+    <style>
+      input {
+        display: block;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Is Divisible By Seven</h1>
+
+    <!-- input for users to type in a number -->
+    <input
+      type="number"
+      name="number"
+      id="numberDivis"
+      placeholder="Type in a number"
+    />
+
+    <!-- button that will return result of the function -->
+    <input type="button" value="Check" onclick="return divisSeven()" />
+
+    <!-- this is where the result will go -->
+    <div id="result"></div>
+
+    <!-- linking js to page -->
+    <script src="app.js"></script>
+  </body>
+</html>
