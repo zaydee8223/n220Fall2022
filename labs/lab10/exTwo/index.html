@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Two: Bad Word Catcher with Loops</title>
+
+    <style>
+      input {
+        display: block;
+        margin-bottom: 30px;
+      }
+
+      #badWord {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bad Word Catcher with Loops</h1>
+
+    <!-- input that will contain the sentence/words -->
+    <input
+      type="text"
+      name="sentence"
+      id="badWord"
+      placeholder="Enter a sentence"
+    />
+
+    <!-- input button with the onclick function -->
+    <input
+      onclick="checkBadWords()"
+      type="button"
+      id="badButton"
+      value="Check for bad words"
+    />
+
+    <!-- div that will display the amount of bad words if any -->
+    <div id="badwordDisplay"></div>
+
+    <!-- linking js -->
+    <script src="app.js"></script>
+  </body>
+</html>
