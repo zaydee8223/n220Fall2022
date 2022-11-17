@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise One: Color Changer</title>
+    <!-- styling the div blocks -->
+    <style>
+      #bOne,
+      #bTwo,
+      #bThree {
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+        float: left;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color Changer</h1>
+    <!-- div block one that will be red when clicked -->
+    <div id="bOne" data-color="red" onclick="newColor(this)"></div>
+
+    <!-- div block one that will be green when clicked -->
+    <div id="bTwo" data-color="green" onclick="newColor(this)"></div>
+
+    <!-- div block one that will be blue when clicked -->
+    <div id="bThree" data-color="blue" onclick="newColor(this)"></div>
+
+    <!-- linking js to page -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Two: Color Mixer</title>
+    <!-- styling for the buttons and the changing color div -->
+    <style>
+      #buttons {
+        width: 300px;
+        margin: 10px 15%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      button {
+        margin: 10px;
+        width: 50px;
+        height: 25px;
+        cursor: pointer;
+      }
+      #currentColor {
+        height: 40px;
+        width: 70%;
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        text-align: center;
+      }
+      #colorBox {
+        height: 200px;
+        width: 70%;
+        margin: 20px auto;
+        background-color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color Mixer</h1>
+    <!-- div for the box that changes color -->
+    <div id="colorBox"></div>
+    <!-- div to show the value of the rgb-->
+    <div id="currentColor">
+      <h3>current color:rgb(<span id="change-rgb"></span>)</h3>
+    </div>
+    <!-- div for buttons -->
+    <div id="buttons">
+      <!-- div block for red buttons -->
+      <div class="redBtns">
+        <h2>Red:</h2>
+        <button onclick="redOne()">+1</button>
+        <button onclick="redFive()">+5</button>
+        <button onclick="redTen()">+10</button>
+      </div>
+
+      <!-- div block for green buttons -->
+      <div class="greenBtns">
+        <h2>Green:</h2>
+        <button onclick="greenOne()">+1</button>
+        <button onclick="greenFive()">+5</button>
+        <button onclick="greenTen()">+10</button>
+      </div>
+
+      <!-- div block for blue buttons -->
+      <div class="blueBtns">
+        <h2>Blue:</h2>
+        <button onclick="blueOne()">+1</button>
+        <button onclick="blueFive()">+5</button>
+        <button onclick="blueTen()">+10</button>
+      </div>
+    </div>
+
+    <!-- linking js to page -->
+    <script src="app.js"></script>
+  </body>
+</html>

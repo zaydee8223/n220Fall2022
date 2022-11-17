@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Three: Flash Cards</title>
+
+    <!-- basic styling of buttons to make them look like flashcards -->
+    <style>
+      button {
+        margin: 20px;
+        width: 200px;
+        height: 200px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* changing the color of the text in the QandA div to green */
+      #QandA {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flash Cards</h1>
+    <p>Click to find out the answer of each question</p>
+
+    <!-- first button with question -->
+    <button onclick="showAnswer(this)" id="sports" data-answer-type="November">
+      In what month does the World Cup begin?
+    </button>
+
+    <!-- second button with question -->
+    <button
+      onclick="showAnswer(this)"
+      id="personal"
+      data-answer-type="Bad Bunny"
+    >
+      Who is my favorite artist?
+    </button>
+
+    <!-- third button with question -->
+    <button onclick="showAnswer(this)" id="weather" data-answer-type="Winter">
+      What season are we in?
+    </button>
+
+    <!-- div that will hold the answer of the question -->
+    <div id="QandA"></div>
+
+    <!-- linking js to page -->
+    <script src="app.js"></script>
+  </body>
+</html>
